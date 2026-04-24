@@ -1,0 +1,128 @@
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f6f9f9;
+  color: #1f2a2a;
+}
+
+.guide {
+  display: block;
+}
+
+.page {
+  width: 297mm;
+  height: 210mm;
+  padding: 18mm;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  page-break-after: always;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero__badge {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.hero__badge-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #009796;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__contact h1 {
+  margin: 0;
+  color: #009796;
+}
+
+.phone {
+  font-weight: bold;
+  color: #007f97;
+}
+
+.page-title h1 {
+  margin: 0;
+  color: #009796;
+}
+
+.page-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.page-grid--one {
+  grid-template-columns: 1fr 1fr;
+}
+
+.page-grid--two {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.card--highlight {
+  background: #e6f5f4;
+}
+
+.card__icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #009796;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.card h2 {
+  margin: 0 0 6px;
+  color: #009796;
+  font-size: 14px;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.photo figcaption {
+  font-size: 11px;
+  color: #666;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.dot--red { background: red; }
+.dot--blue { background: blue; }
+
+.mono {
+  font-family: monospace;
+}
