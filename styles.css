@@ -98,7 +98,8 @@ body {
   opacity: 0.4;
 }
 
-.hero__divider svg {
+.hero__divider svg,
+.hero__divider img {
   width: 18px;
   height: 18px;
   fill: var(--dark-cyan);
@@ -209,9 +210,14 @@ body {
   padding-top: 1px;
 }
 
-.card__icon svg {
+.card__icon svg,
+.card__icon img {
   width: 24px;
   height: 24px;
+  display: block;
+}
+
+.card__icon svg {
   stroke: var(--dark-cyan);
   fill: none;
   stroke-width: 1.7;
