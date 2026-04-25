@@ -61,6 +61,7 @@ body {
   align-items: center;
   font-weight: 700;
   color: var(--forest-green);
+  text-transform: uppercase;
 }
 
 .hero__logo {
@@ -250,10 +251,11 @@ body {
 }
 
 .card h2 {
-  margin: 0 0 5px;
+  margin: 0 0 10px;
   color: var(--dark-cyan);
   font-size: 13.5px;
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .card p,
