@@ -22,7 +22,7 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  background: var(--paper);
+  background: var(--dark-cyan);
   color: var(--ink);
 }
 
@@ -40,6 +40,7 @@ body {
   overflow: hidden;
   page-break-after: always;
   break-after: page;
+  border-radius: 25px;
 }
 
 .hero,
@@ -164,14 +165,25 @@ body {
   gap: 8px;
 }
 
-.page-grid--one {
+/*.page-grid--one {
   grid-template-columns: 1.05fr 1fr;
-  grid-template-rows: 0.7fr 1.55fr 1.2fr 1.55fr;
+  grid-template-rows: 0.6fr 0.9fr 1.45fr 1.2fr 1.45fr;
   grid-template-areas:
-    "before location"
+    "before before"
+    "location location"
     "parking entrance"
     "rules noSpaces"
     "meet aerial";
+}*/
+
+.page-grid--one {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 0.7fr 1.55fr 1.2fr 1.55fr;
+  grid-template-areas:
+    "before before before before location location"
+    "parking parking parking entrance entrance entrance"
+    "rules rules rules noSpaces noSpaces noSpaces"
+    "meet meet meet aerial aerial aerial";
 }
 
 .before-arrive { grid-area: before; }
