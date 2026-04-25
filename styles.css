@@ -63,6 +63,11 @@ body {
   color: var(--forest-green);
 }
 
+.hero__logo {
+  width: 42px;
+  height: 42px;
+}
+
 .hero__title {
   text-align: center;
 }
@@ -73,13 +78,13 @@ body {
   color: var(--dark-cyan);
 }
 
-.hero__title p {
+.hero__title h2 {
   margin: 2px 0 6px;
   font-size: 16px;
   color: var(--muted);
+  font-weight: 500;
 }
 
-/* 🔥 THE LINE + ICON */
 .hero__divider {
   display: flex;
   align-items: center;
@@ -107,50 +112,6 @@ body {
 
 .hero__details .phone {
   margin-top: 4px;
-  font-weight: 800;
-  color: var(--ocean-blue);
-}
-
-.hero__badge {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  font-weight: 750;
-  color: var(--forest-green);
-  letter-spacing: 0.02em;
-}
-
-.hero__badge-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: var(--dark-cyan);
-  color: white;
-  display: grid;
-  place-items: center;
-}
-
-.hero__contact {
-  text-align: right;
-}
-
-.hero__contact h1 {
-  margin: 0 0 4px;
-  color: var(--dark-cyan);
-  font-size: 28px;
-  line-height: 1;
-}
-
-.hero__contact p,
-.page-title p,
-.card p,
-.card li,
-.photo figcaption {
-  margin: 0;
-}
-
-.phone {
-  margin-top: 4px !important;
   font-weight: 800;
   color: var(--ocean-blue);
 }
