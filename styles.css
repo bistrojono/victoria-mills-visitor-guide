@@ -65,8 +65,9 @@ body {
 }
 
 .hero__logo {
-  width: 42px;
-  height: 42px;
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
 }
 
 .hero__title {
