@@ -1,56 +1,87 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Victoria Mills Visitor Guide</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <main class="guide">
         <section class="page page-one" aria-label="Getting there and parking">
             <header class="hero">
-                <div class="hero__badge">
-                    <span class="hero__badge-icon">VM</span>
-                    <span>Victoria Mills<br />Visitor Guide</span>
+
+                <div class="hero__brand">
+                    <img src="images/victoria-mills-logo-small.png" alt="Victoria Mills" class="hero__logo" />
                 </div>
 
-                <div class="hero__contact">
+                <div class="hero__title">
                     <h1>Jono Astley</h1>
-                    <p>509 VM1<br />Salts Mill Road<br />Shipley, Bradford<br />BD17 7EE</p>
-                    <p class="phone">07944 964 716</p>
+                    <h2>Visitor Guide</h2>
+
+                    <div class="hero__divider">
+                        <span></span>
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 21s-7.5-4.8-9.5-10.3C.9 6.4 3.4 3 7.2 3c2 0 3.7 1 4.8 2.7C13.1 4 14.8 3 16.8 3c3.8 0 6.3 3.4 4.7 7.7C19.5 16.2 12 21 12 21Z" />
+                        </svg>
+
+                        <span></span>
+                    </div>
                 </div>
+
+                <div class="hero__details">
+                    <div class="hero__detail-line">
+                        <img src="images/icons/Pin-2--Streamline-Ultimate.svg" alt="" />
+                        <p>
+                            509 VM1<br />
+                            Salts Mill Road<br />
+                            Shipley<br />
+                            Bradford<br />
+                            BD17 7EE
+                        </p>
+                    </div>
+                    <div class="hero__detail-line hero__detail-line--phone">
+                        <img src="images/icons/Phone-Circle--Streamline-Ultimate.svg" alt="" />
+                        <p class="phone">07944 964 716</p>
+                    </div>
+                </div>
+
             </header>
 
             <div class="page-grid page-grid--one">
                 <section class="card card--highlight before-arrive">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2h9A3.5 3.5 0 0 1 20 5.5v5A3.5 3.5 0 0 1 16.5 14H10l-4.5 4v-4A3.5 3.5 0 0 1 4 10.5v-5Z" /></svg>
+                        <img src="images/icons/Messages-Bubble-Square-Typing--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Before You Arrive</h2>
-                        <p>If possible, please text me when you're on your way with an ETA — this helps me be ready to meet you.</p>
+                        <p>If possible, please text me when you're on your way with an ETA — this helps me be ready to
+                            meet you.</p>
                     </div>
                 </section>
 
                 <section class="card location-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-12A7 7 0 0 0 5 9c0 5.7 7 12 7 12Z" /><circle cx="12" cy="9" r="2.5" /></svg>
+                        <img src="images/icons/Style-Two-Pin-Home--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
-                        <h2>Location</h2>
-                        <p><strong>what3words:</strong><br /><span class="mono">///bake.tubes.crib</span></p>
+                        <h2>Location <span class="heading-note">(what3words)</span></h2>
+                        <p class="what3words">///bake.tubes.crib</p>
                     </div>
                 </section>
 
                 <section class="card parking-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M5 14h14l-1.4-4.2A3 3 0 0 0 14.8 8H9.2a3 3 0 0 0-2.8 1.8L5 14Z" /><path d="M6 14v4M18 14v4M8 18h.01M16 18h.01" /></svg>
+                        <img src="images/icons/Car-Actions-Check-1--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Parking Instructions</h2>
                         <ul>
-                            <li>Enter via Victoria Road, turning in next to the Victoria Mills sign</li>
+                            <li>Enter via Victoria Street, turning in next to the Victoria Mills sign</li>
                             <li>This leads directly into the surface visitor car park</li>
                             <li>Park in any available space between the white lines</li>
                             <li>Do not park outside marked bays (strictly enforced)</li>
@@ -59,13 +90,14 @@
                 </section>
 
                 <figure class="photo photo--entrance">
-                    <img src="images/entrance-from-victoria-road.jpg" alt="Entrance from Victoria Road, turning in next to the Victoria Mills sign" />
-                    <figcaption>Enter from Victoria Road here.</figcaption>
+                    <img src="images/entrance-from-victoria-street.jpg"
+                        alt="Entrance from Victoria Street, turning in next to the Victoria Mills sign" />
+                    <figcaption>Enter from Victoria Street here.</figcaption>
                 </figure>
 
                 <section class="card rules-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3Z" /><path d="M12 8v5M12 17h.01" /></svg>
+                        <img src="images/icons/Car-Dashboard-Warning--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Important Parking Rules</h2>
@@ -73,36 +105,35 @@
                             <li>3 hours free parking (single continuous stay)</li>
                             <li>No leaving and re-entering on the same day</li>
                             <li>Parking is monitored via ANPR (automatic number plate recognition)</li>
-                            <li>Failure to comply may result in a £100 charge</li>
+                            <li>Failure to comply may result in a £100 parking charge</li>
                         </ul>
                     </div>
                 </section>
 
                 <section class="card no-spaces-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M4 19h16M6 19V8l6-4 6 4v11M9 19v-6h6v6" /></svg>
+                        <img src="images/icons/Car-3--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>If No Spaces Available</h2>
                         <p>Additional parking may be available round the back (gravel area)</p>
-                        <p>I will guide you if needed once you arrive</p>
                     </div>
                 </section>
 
                 <section class="card meet-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M7 18c0-2.2 2.2-4 5-4s5 1.8 5 4" /><circle cx="12" cy="8" r="3" /><path d="M4 21h16" /></svg>
+                        <img src="images/icons/Trip-Pin-Multiple--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Where to Meet</h2>
-                        <p><span class="dot dot--red"></span>Main car park: I’ll meet you at the red dot</p>
+                        <p><span class="dot dot--red"></span>Main car park: I’ll meet you at the red square</p>
                         <p><span class="dot dot--blue"></span>Round the back: I’ll meet you at the blue dot</p>
                     </div>
                 </section>
 
                 <figure class="photo photo--aerial">
                     <img src="images/aerial-meeting-points.jpg" alt="Aerial view showing red and blue meeting points" />
-                    <figcaption>Red = main car park. Blue = rear parking.</figcaption>
+                    <figcaption>Red = main car park door. Blue = rear parking door.</figcaption>
                 </figure>
             </div>
         </section>
@@ -110,13 +141,14 @@
         <section class="page page-two" aria-label="Finding the entrance">
             <header class="page-title">
                 <h1>Finding Me Once You’ve Parked</h1>
-                <p>Wait for me rather than trying to find the flat — there are multiple entry points and the intercom is unreliable.</p>
+                <p>Wait for me rather than trying to find the flat — there are multiple entry points and the intercom is
+                    unreliable.</p>
             </header>
 
             <div class="page-grid page-grid--two">
                 <section class="card front-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-7h6v7" /></svg>
+                        <img src="images/icons/Office-Building-Tall-2--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Building Front View</h2>
@@ -132,7 +164,7 @@
 
                 <section class="card rear-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M4 20h16M6 20l3-8h6l3 8M9 12V5h6v7" /></svg>
+                        <img src="images/icons/Road-Sign-Hairpin-Turn-Left--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Round the Back</h2>
@@ -157,12 +189,13 @@
 
                 <section class="card pay-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M3 7h18v12H3V7Z" /><path d="M3 10h18M7 15h4" /></svg>
+                        <img src="images/icons/Money-Wallet-Open--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>If You Need to Pay</h2>
                         <p><strong>RingGo code: 63352</strong></p>
-                        <p>Use if they need to pay, i.e. over three hours or leave and come back in the same calendar day (resets at midnight).</p>
+                        <p>Use if they need to pay, i.e. over three hours or leave and come back in the same calendar
+                            day (resets at midnight).</p>
                     </div>
                 </section>
 
@@ -173,30 +206,32 @@
 
                 <section class="card arrival-card card--highlight">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" /></svg>
+                        <img src="images/icons/Phone-Retro-1--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Arrival Instructions (Important)</h2>
                         <p>Please call me when you arrive.</p>
                         <p>I will come down and meet you.</p>
-                        <p><strong>The intercom is unreliable and the building layout can be confusing if unfamiliar.</strong></p>
+                        <p><strong>The intercom is unreliable and the building layout can be confusing if
+                                unfamiliar.</strong></p>
                     </div>
                 </section>
 
                 <section class="card access-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M9 21H5V3h10v18h-4M14 12h.01M15 5h4v16h-4" /></svg>
+                        <img src="images/icons/Lock-Unlock-4--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Access</h2>
                         <p>I will meet you at the entrance and guide you in.</p>
-                        <p>There are multiple entry points, so please wait for me rather than trying to find the flat.</p>
+                        <p>There are multiple entry points, so please wait for me rather than trying to find the flat.
+                        </p>
                     </div>
                 </section>
 
                 <section class="card notes-card">
                     <div class="card__icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" /><path d="M14 2v6h6M8 13h8M8 17h6" /></svg>
+                        <img src="images/icons/Notes-Book-Text--Streamline-Ultimate.svg" alt="" />
                     </div>
                     <div>
                         <h2>Notes</h2>
@@ -204,8 +239,13 @@
                         <p>Once parked, avoid leaving the site during the visit.</p>
                     </div>
                 </section>
+
+                <figure class="photo photo--thankyou">
+                    <img src="images/img-thankyou.PNG" alt="Thank you" />
+                </figure>
             </div>
         </section>
     </main>
 </body>
+
 </html>
