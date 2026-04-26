@@ -270,12 +270,18 @@ body {
   font-weight: 600;
   letter-spacing: 0;
   color: var(--muted);
+  text-transform: none;
+}
+
+.location-card > div {
+  width: 100%;
 }
 
 .what3words {
   font-size: 18px !important;
   font-weight: 800;
   color: var(--ocean-blue);
+  text-align: center;
 }
 
 .card p,
