@@ -165,17 +165,6 @@ body {
   gap: 8px;
 }
 
-/*.page-grid--one {
-  grid-template-columns: 1.05fr 1fr;
-  grid-template-rows: 0.6fr 0.9fr 1.45fr 1.2fr 1.45fr;
-  grid-template-areas:
-    "before before"
-    "location location"
-    "parking entrance"
-    "rules noSpaces"
-    "meet aerial";
-}*/
-
 .page-grid--one {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 0.8fr 2fr 1.2fr 2.2fr;
@@ -201,13 +190,13 @@ body {
 }
 
 .page-grid--two {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1.25fr 1.15fr 1.15fr 1.1fr;
   grid-template-areas:
-    "front frontPhoto frontPhoto frontPhoto"
-    "rear rearPhoto stairsPhoto doorPhoto"
-    "pay ringgoPhoto ringgoPhoto notes"
-    "arrival arrival access access";
+    "front front front frontPhoto frontPhoto frontPhoto frontPhoto frontPhoto frontPhoto frontPhoto frontPhoto frontPhoto"
+    "rear rear rear rearPhoto rearPhoto rearPhoto stairsPhoto stairsPhoto stairsPhoto doorPhoto doorPhoto doorPhoto"
+    "pay pay pay pay ringgoPhoto ringgoPhoto ringgoPhoto ringgoPhoto notes notes notes notes"
+    "arrival arrival arrival arrival access access access access thankyou thankyou thankyou thankyou";
 }
 
 .front-card { grid-area: front; }
@@ -221,6 +210,7 @@ body {
 .arrival-card { grid-area: arrival; }
 .access-card { grid-area: access; }
 .notes-card { grid-area: notes; }
+.photo--thankyou { grid-area: thankyou; }
 
 .photo--front img {object-fit: fill !important;}
 
