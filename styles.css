@@ -33,7 +33,7 @@ body {
 .page {
   width: 297mm;
   height: 210mm;
-  padding: 12mm;
+  padding: 5mm;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -178,12 +178,12 @@ body {
 
 .page-grid--one {
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.7fr 1.55fr 1.2fr 1.55fr;
+  grid-template-rows: 0.8fr 2fr 1.2fr 2.2fr;
   grid-template-areas:
     "before before before before location location"
-    "parking parking parking entrance entrance entrance"
+    "parking parking entrance entrance entrance entrance"
     "rules rules rules noSpaces noSpaces noSpaces"
-    "meet meet meet aerial aerial aerial";
+    "meet meet aerial aerial aerial aerial";
 }
 
 .before-arrive { grid-area: before; }
@@ -195,14 +195,19 @@ body {
 .meet-card { grid-area: meet; }
 .photo--aerial { grid-area: aerial; }
 
+.photo--entrance img,
+.photo--aerial img {
+  object-fit: fill !important;
+}
+
 .page-grid--two {
-  grid-template-columns: 0.95fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1.25fr 1.15fr 1.15fr 1.1fr;
   grid-template-areas:
-    "front frontPhoto frontPhoto"
-    "rear rearPhoto stairsPhoto"
-    "pay doorPhoto ringgoPhoto"
-    "arrival access notes";
+    "front frontPhoto frontPhoto frontPhoto"
+    "rear rearPhoto stairsPhoto doorPhoto"
+    "pay ringgoPhoto ringgoPhoto notes"
+    "arrival arrival access access";
 }
 
 .front-card { grid-area: front; }
@@ -216,6 +221,8 @@ body {
 .arrival-card { grid-area: arrival; }
 .access-card { grid-area: access; }
 .notes-card { grid-area: notes; }
+
+.photo--front img {object-fit: fill !important;}
 
 .card,
 .photo {
