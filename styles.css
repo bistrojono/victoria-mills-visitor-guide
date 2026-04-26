@@ -273,7 +273,8 @@ body {
   text-transform: none;
 }
 
-.location-card > div {
+/* Narrow selector to content div only */
+.location-card > div:last-child {
   width: 100%;
 }
 
